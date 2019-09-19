@@ -33,6 +33,6 @@ public class MeteoData {
      * informacionActualizada
      */
     public void informacionActualizada() {
-        displays.stream().forEach();
+        displays.stream().forEach( d -> d.actualizar(this.getHumedad(), this.getPresion(), this.getTemperatura()) );
     }
 }
